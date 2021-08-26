@@ -43,5 +43,6 @@ sudo systemctl enable txGen.service
 sudo systemctl start txGen.service
 sudo systemctl status txGen.service
 ```
+Make sure to change $YOURUSERNAME to the actual username that is running junod.
 
 # That's it, you're done!
