@@ -29,10 +29,10 @@ sudo tee /etc/systemd/system/txGen.service > /dev/null <<EOF
 Description=txGen
 After=multi-user.target
 [Service]
-User=validator
+User=$YOURUSERNAME
 Type=simple
 Restart=always
-ExecStart=/usr/bin/python3 /home/validator/scripts/junoTxGenerator.py
+ExecStart=/usr/bin/python3 /home/$YOURUSERNAME/scripts/junoTxGenerator.py
 [Install]
 WantedBy=multi-user.target
 EOF
